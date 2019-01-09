@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int a1,a2,a3;
+	int d=0;
+	int n=0;
+	scanf("%d%d%d",&a1,&a2,&a3);
+	while(1)
+	{
+	if(a1==0 && a2==0 && a3==0)
+	break;
+	else if((a2-a1)==(a3-a2))
+		{
+			d=a2-a1;
+			n=a3+d;
+			printf("AP %d\n",n);
+		}
+	else if(a2/a1==a3/a2)
+		{
+			d=a2/a1;
+			n=a3*d;
+			printf("GP %d\n",n);
+		}
+		scanf("%d%d%d",&a1,&a2,&a3);
+		
+	}
+	return 0;
+}
+    
